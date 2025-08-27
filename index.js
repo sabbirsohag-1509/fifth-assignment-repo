@@ -5,7 +5,9 @@ function getElement(id){
     const element = document.getElementById(id);
     return element;
 }
+
                  //Heart Count
+
     let count = 0;
 const counter = getElement('heart-counter');
 const heartButtons = document.getElementsByClassName('btn-heart');
@@ -31,7 +33,7 @@ const copyButtons = document.getElementsByClassName('btn-copy');
 
             //number ta khuje ber korbo
         const card = copyButton.closest('.shadow');
-        const number = card.querySelector('.text-2xl').innerText
+        const number = card.querySelector('.card-num').innerText
 
             //clipboard theke number copy korbo
             navigator.clipboard.writeText(number)
@@ -41,3 +43,5 @@ const copyButtons = document.getElementsByClassName('btn-copy');
         })
     }
  
+                        // Call Button Click 
+
