@@ -36,7 +36,7 @@ const copyButtons = document.getElementsByClassName('btn-copy');
             //clipboard theke number copy korbo
             navigator.clipboard.writeText(number)
                 .then(() => {
-                    alert(`Number ${number} copied`);
+                    alert(`✅Number ${number} copied`);
                 })
         })
     }
