@@ -1,7 +1,5 @@
 // console.log('connected');
 
-// const { createElement } = require("react");
-
            
 function getElement(id){
     const element = document.getElementById(id);
@@ -67,7 +65,7 @@ let coins = parseInt(coinCount.innerText);
             if(coins >= 20){
                 coins = coins - 20;
                 coinCount.innerText = coins;
-                alert(`📞Calling ${title}, ${number}..Emergency Services`);
+                alert(`📞Calling ${title}, ${number}...`);
             }
             else if(coins < 20){
                 alert(`❌You have no sufficient Coin, If you want to call, You need minimum 20 coin.`);
