@@ -18,7 +18,7 @@ const heartButtons = document.getElementsByClassName('btn-heart');
         })
     }
 
-            // Copy Count 
+            // Copy Count + copy number & show alert message
     let copyCount = 0;
 const copyCounter = getElement('copy-counter');
 const copyButtons = document.getElementsByClassName('btn-copy');
@@ -29,7 +29,15 @@ const copyButtons = document.getElementsByClassName('btn-copy');
         copyCount++;
         copyCounter.innerText = copyCount; 
 
+            //number ta khuje ber korbo
+        const card = copyButton.closest('.shadow');
+        const number = card.querySelector('.text-2xl').innerText
+
+            //clipboard theke number copy korbo
+            navigator.clipboard.writeText(number)
+                .then(() => {
+                    alert(`Number ${number} copied`);
+                })
         })
     }
-
-            
+ 
